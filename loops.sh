@@ -1,3 +1,5 @@
+#!/bin/bash
+
 USERID=$(id -u)
 
 CHECk_ROOT(){
