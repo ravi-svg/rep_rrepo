@@ -7,7 +7,7 @@ CHECk_ROOT(){
     exit 1
   fi
 }
-CHECk_ROOT()
+CHECk_ROOT
 VALIDATE(){
   if [ $1 -ne 0]
   then
