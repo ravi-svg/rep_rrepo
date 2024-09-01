@@ -3,7 +3,7 @@
 USERID=$(id -u)
 
 CHECk_ROOT(){
-  if [ $? -ne 0 ]
+  if [ $USERID -ne 0 ]
   then
     echo "Please run the script with root previlages"
     exit 1
