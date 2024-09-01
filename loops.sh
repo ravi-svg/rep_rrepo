@@ -7,7 +7,7 @@ CHECk_ROOT(){
     exit 1
   fi
 }
-CHECk_ROOT
+CHECk_ROOT()
 VALIDATE(){
   if [ $1 -ne 0]
   then
@@ -20,7 +20,7 @@ VALIDATE(){
 for package in $@
 do
   dnf list installed package
-  if [ $? -ne 0]
+  if [ $? -ne 0 ]
   then
     echo "$package is not installed, going to install"
     dnf install $package
